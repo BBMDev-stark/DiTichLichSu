@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="vi" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bản đồ Di sản Quảng Bình</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Nunito:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="h-full">
+    <div id="app" class="h-full w-full flex flex-col">
+      <!-- Modern Header -->
+      <header
+        class="glass-effect border-b border-blue-100 shadow-lg relative z-20"
+      >
+        <div class="px-4 md:px-6 py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-3">
+              <div class="relative">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg transform hover:rotate-6 transition-transform"
+                >
+                  <svg
+                    class="w-7 h-7 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white pulse-marker"
+                ></div>
+              </div>
+              <div>
+                <h1
+                  id="platform-title"
+                  class="font-heading text-xl md:text-2xl font-bold text-gray-800"
+                >
+                  Bản đồ Di sản Quảng Bình
+                </h1>
+                <p id="tagline" class="text-xs md:text-sm text-gray-500">
+                  Khám phá vương quốc hang động
+                </p>
+              </div>
+            </div>
+            <!-- Actions -->
+            <div class="flex items-center gap-2">
+              <button
+                onclick="toggleSearch()"
+                class="p-2.5 hover:bg-blue-50 rounded-xl transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="toggleSidebar()"
+                class="md:hidden p-2.5 hover:bg-blue-50 rounded-xl transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Search Bar -->
+          <div id="search-bar" class="hidden mt-3 animate-fade-in">
+            <div class="relative">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Tìm hang động, di tích, làng nghề..."
+                class="w-full px-4 py-3 pl-11 bg-white border-2 border-blue-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all"
+                oninput="handleSearch(this.value)"
+              />
+              <svg
+                class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <div class="flex-1 flex overflow-hidden relative">
+        <!-- Sidebar -->
+        <aside
+          id="sidebar"
+          class="hidden md:flex flex-col w-96 glass-effect border-r border-blue-100 shadow-xl z-10"
+        >
+          <!-- Welcome Message -->
+          <div
+            class="p-5 bg-gradient-to-br from-blue-50 to-purple-50 border-b border-blue-100"
+          >
+            <p
+              id="welcome-message"
+              class="text-sm text-gray-700 leading-relaxed"
+            >
+              Chào mừng bạn đến với di sản Quảng Bình - nơi hội tụ những kỳ quan
+              thiên nhiên tuyệt đẹp
+            </p>
+          </div>
+          <!-- Category Filter -->
+          <div class="p-5 border-b border-gray-100">
+            <h3 class="font-heading font-semibold text-gray-700 mb-3 text-sm">
+              Danh mục
+            </h3>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                onclick="filterCategory('all')"
+                class="category-badge active px-4 py-2.5 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-medium text-sm shadow-md"
+              >
+                🌟 Tất cả
+              </button>
+              <button
+                onclick="filterCategory('cave')"
+                class="category-badge px-4 py-2.5 bg-gray-100 text-gray-700 rounded-xl font-medium text-sm hover:bg-blue-50"
+              >
+                🏔️ Hang động
+              </button>
+              <button
+                onclick="filterCategory('heritage')"
+                class="category-badge px-4 py-2.5 bg-gray-100 text-gray-700 rounded-xl font-medium text-sm hover:bg-blue-50"
+              >
+                🏛️ Di tích
+              </button>
+              <button
+                onclick="filterCategory('nature')"
+                class="category-badge px-4 py-2.5 bg-gray-100 text-gray-700 rounded-xl font-medium text-sm hover:bg-blue-50"
+              >
+                🌿 Thiên nhiên
+              </button>
+            </div>
+          </div>
+          <!-- Heritage List -->
+          <div class="flex-1 overflow-y-auto sidebar-scroll p-5">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-heading font-semibold text-gray-700">Điểm đến</h3>
+              <span
+                id="heritage-count"
+                class="text-xs font-medium text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full"
+                >10 địa điểm</span
+              >
+            </div>
+            <div id="heritage-list" class="space-y-3">
+              <!-- Heritage items will be inserted here -->
+            </div>
+          </div>
+          <!-- Stats Footer -->
+          <div
+            class="p-5 bg-gradient-to-r from-blue-50 to-purple-50 border-t border-blue-100"
+          >
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div>
+                <div class="text-2xl font-bold text-blue-600">5</div>
+                <div class="text-xs text-gray-600 mt-0.5">Hang động</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-purple-600">3</div>
+                <div class="text-xs text-gray-600 mt-0.5">Di tích</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-green-600">2</div>
+                <div class="text-xs text-gray-600 mt-0.5">Thiên nhiên</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- Map Container -->
+        <div class="flex-1 relative">
+          <div id="map" class="absolute inset-0"></div>
+          <!-- Map Controls -->
+          <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+            <button
+              onclick="map.setView([17.6, 106.35], 10)"
+              class="p-3 glass-effect rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-blue-100"
+              title="Về trung tâm"
+            >
+              <svg
+                class="w-5 h-5 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </button>
+            <button
+              onclick="showAllMarkers()"
+              class="p-3 glass-effect rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-blue-100"
+              title="Xem tất cả"
+            >
+              <svg
+                class="w-5 h-5 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+                />
+              </svg>
+            </button>
+            <button
+              onclick="map.zoomIn()"
+              class="p-3 glass-effect rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-blue-100"
+              title="Phóng to"
+            >
+              <svg
+                class="w-5 h-5 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </button>
+            <button
+              onclick="map.zoomOut()"
+              class="p-3 glass-effect rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-blue-100"
+              title="Thu nhỏ"
+            >
+              <svg
+                class="w-5 h-5 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Mobile Toggle Button -->
+          <button
+            onclick="toggleSidebar()"
+            class="md:hidden absolute bottom-4 left-4 px-4 py-3 glass-effect rounded-xl shadow-lg flex items-center gap-2 z-10 hover:shadow-xl transition-all border border-blue-100"
+          >
+            <svg
+              class="w-5 h-5 text-blue-600"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              /></svg
+            ><span class="text-sm font-semibold text-gray-700">Danh sách</span>
+          </button>
+          <!-- Legend -->
+          <div
+            class="absolute bottom-4 right-4 glass-effect rounded-xl shadow-lg p-4 z-10 border border-blue-100"
+          >
+            <h4 class="text-xs font-heading font-bold text-gray-700 mb-3">
+              Chú thích
+            </h4>
+            <div class="space-y-2 text-xs">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-4 h-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full shadow-sm"
+                ></div>
+                <span class="text-gray-600">Hang động</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-4 h-4 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full shadow-sm"
+                ></div>
+                <span class="text-gray-600">Di tích lịch sử</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-4 h-4 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full shadow-sm"
+                ></div>
+                <span class="text-gray-600">Thiên nhiên</span>
+              </div>
+              <button
+                onclick="toggleLanguage()"
+                class="p-2.5 hover:bg-blue-50 rounded-xl transition-colors font-medium text-sm border border-blue-200 flex items-center gap-1"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.516 10.011 10.278 15.019 9.047 20"
+                  />
+                </svg>
+                <span id="lang-text">VI / EN</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Detail Modal -->
+      <div id="detail-modal" class="fixed inset-0 z-50 hidden">
+        <div
+          class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          onclick="closeModal()"
+        ></div>
+        <div
+          class="absolute inset-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-3xl bg-white rounded-3xl shadow-2xl overflow-hidden animate-fade-in max-h-[90vh] overflow-y-auto"
+        >
+          <div id="modal-content">
+            <!-- Modal content will be inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
