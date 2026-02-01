@@ -75,7 +75,7 @@ const heritageData = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9FDQJaAGeLdJKewhlQoi8hGNLCeYqGzQEA&s",
     gallery: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FoNWZiiAeVg_Y6eYDAxaCdzmm9eOJTYnjQ&s",
-      "https://bizweb.dktcdn.net/thumb/grande/100/469/761/files/nhaluuniemdaituongvonguyengiap-tomorrow-vn-optimized.jpg?v=1672816657018",
+      "https://quangbinhtourism.vn/wp-content/uploads/2024/12/1a-1024x614.webp",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTZZWA5FiAdKE3fIiRFxaNqKYo2BoHRl4LA&s",
     ],
     hours: "07:00 - 17:00",
@@ -141,7 +141,7 @@ const heritageData = [
       "Tưởng niệm Mẹ Nguyễn Thị Suốt - người anh hùng chèo đò đưa bộ đội qua sông Nhật Lệ.",
     description_en:
       "Monument to Mother Nguyen Thi Suot, heroine who ferried soldiers across Nhat Le River.",
-    address: "Bến phà Long Đại, huyện Quảng Ninh",
+    address: "Phường Đồng Hơi, huyện Quảng Ninh",
     lat: 17.4656005539287,
     lng: 106.62712056337027,
     rating: 4.8,
@@ -181,7 +181,7 @@ const heritageData = [
       "Tàn tích nhà thờ Công giáo bị phá hủy năm 1968, biểu tượng hòa bình và ký ức chiến tranh.",
     description_en:
       "Ruins of the Catholic church destroyed in 1968, symbol of peace and war memories.",
-    address: "Phường Đồng Mỹ, TP. Đồng Hới",
+    address: "Phường Đồng Hới, TP. Đồng Hới",
     lat: 17.47560905250639,
     lng: 106.62337614777738,
     rating: 4.6,
@@ -218,7 +218,7 @@ const heritageData = [
       "Nơi 8 nữ thanh niên xung phong hy sinh khi làm nhiệm vụ trong kháng chiến chống Mỹ.",
     description_en:
       "Site where 8 female youth volunteers sacrificed during the resistance war.",
-    address: "Đường Hồ Chí Minh, huyện Tuyên Hóa",
+    address: "Thượng Trạch",
     lat: 17.50276265799618,
     lng: 106.26023181178012,
     rating: 4.7,
@@ -295,7 +295,7 @@ const heritageData = [
     description:
       "Nơi an nghỉ của Đại tướng Võ Nguyên Giáp và mộ phần gia đình.",
     description_en: "Resting place of General Vo Nguyen Giap and family tombs.",
-    address: "Xã Quảng Đông, huyện Quảng Trạch",
+    address: "Xã Quảng Đông, huyện Phú Trạch",
     lat: 17.911745812446178,
     lng: 106.49457544348924,
     rating: 4.9,
@@ -335,7 +335,7 @@ const heritageData = [
       "Lăng mộ của Lễ Thành Hầu Nguyễn Hữu Cảnh - người có công mở mang bờ cõi phương Nam.",
     description_en:
       "Tomb of Le Thanh Hau Nguyen Huu Canh - pioneer of southern expansion.",
-    address: "Xã Sen Thuỷ, huyện Lệ Thủy",
+    address: "Xã Trường Phú, huyện Lệ Thủy",
     lat: 17.15,
     lng: 106.85,
     rating: 4.5,
