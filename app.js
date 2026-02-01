@@ -897,7 +897,7 @@ function openDetailModal(id) {
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-blue-500 font-bold">•</span>
-                  <span>Mang theo áo khoác vì nhiệt độ trong hang có thể thấp</span>
+                  <span>Chủ động tìm hiểu trước thông tin di sản (lịch sử, vị trí, thời gian mở cửa) để việc tham quan hiệu quả hơn</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-blue-500 font-bold">•</span>
