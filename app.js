@@ -901,7 +901,7 @@ function openDetailModal(id) {
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-blue-500 font-bold">•</span>
-                  <span>Đi giày thể thao có đế chống trượt</span>
+                  <span>Tôn trọng và tuân thủ các quy định bảo tồn di sản, không xả rác, không tác động lên hiện vật</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-blue-500 font-bold">•</span>
