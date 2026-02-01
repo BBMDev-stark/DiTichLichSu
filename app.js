@@ -63,7 +63,7 @@ const heritageData = [
       "Nơi sinh ra và lớn lên của Đại tướng Võ Nguyên Giáp - vị tướng huyền thoại của Quân đội Nhân dân Việt Nam.",
     description_en:
       "Birthplace and memorial of General Vo Nguyen Giap, legendary Vietnamese military leader.",
-    address: "Làng An Ninh, xã Lộc An, huyện Lệ Thủy",
+    address: "xã Lộc Thủy, tỉnh Quảng Trị",
     lat: 17.243940529116877,
     lng: 106.74987848294082,
     rating: 4.9,
@@ -74,8 +74,8 @@ const heritageData = [
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9FDQJaAGeLdJKewhlQoi8hGNLCeYqGzQEA&s",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FoNWZiiAeVg_Y6eYDAxaCdzmm9eOJTYnjQ&s",
-      "https://quangbinhtourism.vn/wp-content/uploads/2024/12/1a-1024x614.webp",
+      "https://phongnhadiscovery.com/sites/default/files/nha_dai_tuong.jpg",
+      "https://image.vietgoing.com/destination/large/vietgoing_gch2105087218.webp",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTZZWA5FiAdKE3fIiRFxaNqKYo2BoHRl4LA&s",
     ],
     hours: "07:00 - 17:00",
@@ -141,7 +141,7 @@ const heritageData = [
       "Tưởng niệm Mẹ Nguyễn Thị Suốt - người anh hùng chèo đò đưa bộ đội qua sông Nhật Lệ.",
     description_en:
       "Monument to Mother Nguyen Thi Suot, heroine who ferried soldiers across Nhat Le River.",
-    address: "Phường Đồng Hơi, huyện Quảng Ninh",
+    address: " phường Đồng Hới , TP Đồng Hới, tỉnh Quảng Trị",
     lat: 17.4656005539287,
     lng: 106.62712056337027,
     rating: 4.8,
@@ -258,7 +258,7 @@ const heritageData = [
       "Cửa ải nổi tiếng trong thơ Hồ Xuân Hương, chứng tích phân chia Đàng Trong - Đàng Ngoài.",
     description_en:
       "Famous pass gate in Ho Xuan Huong's poetry, evidence of Dang Trong - Dang Ngoai division.",
-    address: "Đèo Ngang, huyện Quảng Trạch",
+    address: "Xã Phú Trạch, tỉnh Quảng Trị",
     lat: 17.956420783081235,
     lng: 106.46957838110254,
     rating: 4.6,
@@ -295,7 +295,7 @@ const heritageData = [
     description:
       "Nơi an nghỉ của Đại tướng Võ Nguyên Giáp và mộ phần gia đình.",
     description_en: "Resting place of General Vo Nguyen Giap and family tombs.",
-    address: "Xã Quảng Đông, huyện Phú Trạch",
+    address: "Đảo yến thuộc xã Phú Trạch, tỉnh Quảng Trị",
     lat: 17.911745812446178,
     lng: 106.49457544348924,
     rating: 4.9,
@@ -335,7 +335,7 @@ const heritageData = [
       "Lăng mộ của Lễ Thành Hầu Nguyễn Hữu Cảnh - người có công mở mang bờ cõi phương Nam.",
     description_en:
       "Tomb of Le Thanh Hau Nguyen Huu Canh - pioneer of southern expansion.",
-    address: "Xã Trường Phú, huyện Lệ Thủy",
+    address: "xã Trường Phú, tỉnh Quảng Trị",
     lat: 17.15,
     lng: 106.85,
     rating: 4.5,
