@@ -24,7 +24,9 @@ const translations = {
       "Chào mừng bạn đến với di sản lịch sử Quảng Bình - vùng đất anh hùng và hào hùng",
     search_placeholder: "Tìm di tích lịch sử...",
     all: "🌟 Tất cả",
+    cave: "🏔️ Hang động",
     heritage: "🏛️ Di tích",
+    nature: "🌿 Thiên nhiên",
     history_button: "Câu chuyện lịch sử",
     book_tour: "Đặt tour ngay",
     hours: "Giờ mở cửa",
@@ -40,7 +42,9 @@ const translations = {
       "Welcome to Quang Binh historical heritage - land of heroes and glorious history",
     search_placeholder: "Search historical sites...",
     all: "🌟 All",
+    cave: "🏔️ Caves",
     heritage: "🏛️ Heritage",
+    nature: "🌿 Nature",
     history_button: "Historical Story",
     book_tour: "Book Tour Now",
     hours: "Opening Hours",
@@ -63,9 +67,9 @@ const heritageData = [
       "Nơi sinh ra và lớn lên của Đại tướng Võ Nguyên Giáp - vị tướng huyền thoại của Quân đội Nhân dân Việt Nam.",
     description_en:
       "Birthplace and memorial of General Vo Nguyen Giap, legendary Vietnamese military leader.",
-    address: "xã Lộc Thủy, tỉnh Quảng Trị",
-    lat: 17.243940529116877,
-    lng: 106.74987848294082,
+    address: "xã Lộc Thủy, tỉnh Quảng Bình",
+    lat: 17.243889296166603,
+    lng: 106.74984629643421,
     rating: 4.9,
     reviews: 3200,
     price: "Miễn phí",
@@ -101,9 +105,9 @@ const heritageData = [
       "Cổng thành cổ duy nhất còn lại của hệ thống Lũy Thầy, xây dựng năm 1639.",
     description_en:
       "The only remaining ancient gate of the Thầy Rampart system, built in 1639.",
-    address: "Phường Đồng Hới, TP. Đồng Hới",
-    lat: 17.463387226793756,
-    lng: 106.62401869643756,
+    address: "Phường Đồng Hới, TP. Đồng Hới, tỉnh Quảng Bình",
+    lat: 17.46342816411765,
+    lng: 106.62404015410861,
     rating: 4.7,
     reviews: 1800,
     price: "Miễn phí",
@@ -141,9 +145,9 @@ const heritageData = [
       "Tưởng niệm Mẹ Nguyễn Thị Suốt - người anh hùng chèo đò đưa bộ đội qua sông Nhật Lệ.",
     description_en:
       "Monument to Mother Nguyen Thi Suot, heroine who ferried soldiers across Nhat Le River.",
-    address: " phường Đồng Hới , TP Đồng Hới, tỉnh Quảng Trị",
-    lat: 17.4656005539287,
-    lng: 106.62712056337027,
+    address: "Phường Đồng Hới, TP Đồng Hới, tỉnh Quảng Bình",
+    lat: 17.459210733447197,
+    lng: 106.62537488109533,
     rating: 4.8,
     reviews: 2200,
     price: "Miễn phí",
@@ -173,237 +177,452 @@ const heritageData = [
   },
   {
     id: 4,
-    name: "Nhà thờ Tam Tòa (tàn tích)",
-    name_en: "Tam Toa Church Ruins",
-    category: "heritage",
-    type: "Di tích kiến trúc thời Pháp thuộc",
+    name: "Hang Sơn Đoòng",
+    name_en: "Son Doong Cave",
+    category: "cave",
+    type: "Hang động lớn nhất thế giới",
     description:
-      "Tàn tích nhà thờ Công giáo bị phá hủy năm 1968, biểu tượng hòa bình và ký ức chiến tranh.",
+      "Hang Sơn Đoòng là hang động tự nhiên lớn nhất thế giới, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, với sông ngầm, rừng nguyên sinh bên trong và hệ sinh thái riêng biệt.",
     description_en:
-      "Ruins of the Catholic church destroyed in 1968, symbol of peace and war memories.",
-    address: "Phường Đồng Hới, TP. Đồng Hới",
-    lat: 17.47560905250639,
-    lng: 106.62337614777738,
-    rating: 4.6,
-    reviews: 1500,
-    price: "Miễn phí",
-    image: "https://api.sovaba.travel/uploads/tam_toa_sovaba_f9370a6943.jpg",
+      "Son Doong Cave is the world's largest natural cave, located in Phong Nha-Ke Bang National Park, featuring an underground river, internal jungle, and unique ecosystem.",
+    address: "Xã Tân Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    lat: 17.464945897175223,
+    lng: 106.2879303382137,
+    rating: 5.0,
+    reviews: 160,
+    price: "79.500.000 VNĐ",
+    image:
+      "https://oxalisadventure.com/uploads/2022/12/sondoongcavebanner800__638073075744874957.jpg",
     thumbnail:
-      "https://api.sovaba.travel/uploads/tam_toa_sovaba_f9370a6943.jpg",
+      "https://oxalisadventure.com/uploads/2022/12/sondoongcavebanner800__638073075744874957.jpg",
     gallery: [
-      "https://api.sovaba.travel/uploads/Nha_tho_tam_toa_cu_nam_o_trung_tam_thanh_pho_dong_hoi_quang_binh_24d9c0757e.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSJ1PyXCiaUd7L6vdU440UTouf_RfLCyUfw&s",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/8b/ef/86/tam-toa-church.jpg?w=900&h=500&s=1",
+      "https://www.bambooairways.com/documents/20122/1165110/du-lich-hang-son-doong-1.jpeg/0244dbb2-ea2a-2f61-5e67-6088ca9efe3d?t=1695027512192",
+      "http://www.sondoongcave.org/images/hang-son-doong-cave-vietnam2.jpg",
+      "https://phongnhacave.org/wp-content/uploads/2015/12/hang-son-doong.jpg",
+      "https://mia.vn/media/uploads/blog-du-lich/hang-son-doong-quang-binh-kham-pha-hang-dong-lon-nhat-the-gioi-5-1653570252.jpeg",
     ],
-    hours: "24/7",
+    hours: "Chỉ mở cho tour thám hiểm theo mùa (tháng 2-8)",
     highlights: [
-      "Tàn tích chiến tranh",
-      "Kiến trúc Gothic",
-      "Biểu tượng Đồng Hới",
-      "Check-in hoàng hôn",
+      "Hang lớn nhất thế giới",
+      "Rừng nguyên sinh bên trong",
+      "Sông ngầm chảy qua",
+      "Hố sụt khổng lồ tạo giếng trời",
     ],
     historyStory:
-      "Nhà thờ Tam Tòa là một tàn tích lịch sử đặc biệt, gắn liền với những biến động dữ dội của chiến tranh tại Quảng Bình trong thế kỷ XX. Công trình từng là một nhà thờ lớn, được xây dựng từ thời Pháp thuộc, mang phong cách kiến trúc phương Tây và giữ vai trò quan trọng trong đời sống tôn giáo, văn hóa của cộng đồng địa phương. Trong thời kỳ kháng chiến chống Mỹ, khu vực này trở thành trọng điểm đánh phá ác liệt, và nhà thờ Tam Tòa đã bị bom đạn chiến tranh tàn phá gần như hoàn toàn, chỉ còn lại phần tháp chuông và một số mảng tường đổ nát. Những gì còn sót lại của công trình không chỉ phản ánh sự khốc liệt của chiến tranh, mà còn trở thành chứng tích lịch sử sống động, nhắc nhớ về những mất mát, hy sinh của con người và vùng đất Quảng Bình. Ngày nay, tàn tích nhà thờ Tam Tòa được gìn giữ như một biểu tượng của ký ức chiến tranh, mang giá trị lịch sử – nhân văn sâu sắc, góp phần giáo dục thế hệ sau về giá trị của hòa bình và sự trân trọng quá khứ.",
-
+      "Hang Sơn Đoòng được phát hiện năm 1991 bởi ông Hồ Khanh, một người dân địa phương ở Quảng Bình, nhưng chỉ được khám phá đầy đủ năm 2009 bởi Hiệp hội Hang động Anh. Hang được hình thành cách đây 2-5 triệu năm do nước sông xói mòn đá vôi. Năm 2013, hang được mở cửa cho du lịch thám hiểm hạn chế, trở thành biểu tượng của du lịch mạo hiểm Việt Nam và được công nhận là hang động tự nhiên lớn nhất thế giới.",
     historyStory_en:
-      "The ruins of Tam Toa Church stand on the poetic banks of the Nhat Le River as a silent yet powerful witness to a tragic and heroic period in the nation's history. Construction began in 1886 and was completed in 1890 during the French colonial era, serving as the cathedral for the Tam Toa parish—one of the oldest Catholic communities in the region. Boasting sophisticated Gothic architecture with pointed arches and a soaring bell tower, this church was once hailed as one of the most beautiful religious structures in Central Vietnam. However, during the devastating air war launched by the US against North Vietnam, the city of Dong Hoi was flattened by tens of thousands of tons of bombs. From 1964 to 1972, the area became a 'fire coordinate,' and on February 11, 1965, the majestic cathedral endured brutal bombardments that caused the entire structure to collapse, leaving only the scarred bell tower and crumbling pillars. After the war, rather than rebuilding on the original site, the authorities decided to preserve the ruins as a stark monument to war crimes. Today, Tam Toa Church is not only a historical landmark but also a symbol of rebirth—an eternal reminder of the price of peace and the indomitable spirit of the people of Quang Binh in the face of total destruction.",
+      "Son Doong Cave was discovered in 1991 by local man Ho Khanh in Quang Binh Province, but fully explored in 2009 by the British Cave Research Association. Formed 2-5 million years ago by river erosion of limestone, it opened for limited adventure tourism in 2013. Recognized as the world's largest natural cave, it features its own jungle, river, and ecosystem, making it a global icon of Vietnam's adventure travel.",
   },
   {
     id: 5,
-    name: "Hang Tám Cô",
-    name_en: "Eight Girls Cave",
-    category: "heritage",
-    type: "Di tích thanh niên xung phong",
+    name: "Hang Én",
+    name_en: "En Cave",
+    category: "cave",
+    type: "Hang động lớn thứ ba thế giới",
     description:
-      "Nơi 8 nữ thanh niên xung phong hy sinh khi làm nhiệm vụ trong kháng chiến chống Mỹ.",
+      "Hang Én là một trong những hang động lớn nhất thế giới, nằm sâu trong Vườn quốc gia Phong Nha-Kẻ Bàng, với bãi cát, sông ngầm và hệ thống hang rộng lớn.",
     description_en:
-      "Site where 8 female youth volunteers sacrificed during the resistance war.",
-    address: "Thượng Trạch",
-    lat: 17.50276265799618,
-    lng: 106.26023181178012,
-    rating: 4.7,
-    reviews: 1200,
-    price: "Miễn phí",
+      "En Cave is the third largest cave in the world, located deep in Phong Nha-Ke Bang National Park, featuring a beach, underground river, and vast chambers.",
+    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    lat: 17.457392586611025,
+    lng: 106.28773716717932,
+    rating: 4.9,
+    reviews: 100,
+    price: "8.800.000 VNĐ",
     image:
-      "https://vivuquangbinh.vn/wp-content/uploads/2025/04/hang-tam-co-quang-binh.jpg",
+      "https://evivatour.com/wp-content/uploads/2021/09/Hang-En-Cave-1000x565.jpg",
     thumbnail:
-      "https://vivuquangbinh.vn/wp-content/uploads/2025/04/hang-tam-co-quang-binh.jpg",
+      "https://evivatour.com/wp-content/uploads/2021/09/Hang-En-Cave-1000x565.jpg",
     gallery: [
-      "https://dulichnewtour.vn/ckfinder/images/Tours/hangtamco/hang-tam-co%20(1).jpg",
-      "https://media-cdn-v2.laodong.vn/storage/newsportal/2024/11/1/1415497/Hang-8-Co-41-01.JPG",
-      "https://image.vietgoing.com/destination/large/vietgoing_tzl2104195978.webp",
-      "https://static.tuoitre.vn/tto/i/s626/2009/05/17/WGUAFDR5.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOn3UasdkRb4lWEirLtQd0PPkAAgCHZ4TaQ&s",
+      "https://api.sovaba.travel/uploads/Ve_dep_vo_thuc_cua_hang_en_9f4ec2cf33.jpg",
+      "https://image.vietgoing.com/destination/large/vietgoing_oyg2104289310.webp",
     ],
-    hours: "07:00 - 17:00",
+    hours: "Chỉ mở cho tour thám hiểm",
     highlights: [
-      "Di tích TNXP",
-      "Hang lịch sử",
-      "Tượng đài tri ân",
-      "Đường HCM huyền thoại",
+      "Hang lớn thứ ba thế giới",
+      "Bãi cát tự nhiên bên trong",
+      "Sông ngầm và hồ nước",
+      "Nơi trú ngụ của hàng ngàn chim én",
     ],
     historyStory:
-      "Hang Tám Cô là một di tích lịch sử đặc biệt, gắn liền với câu chuyện bi tráng về sự hy sinh anh dũng của lực lượng thanh niên xung phong và bộ đội trong thời kỳ kháng chiến chống Mỹ. Trong những năm chiến tranh ác liệt, hang nằm trên tuyến đường chiến lược Trường Sơn, giữ vai trò quan trọng trong việc đảm bảo giao thông, vận chuyển lương thực, vũ khí và chi viện cho chiến trường miền Nam. Năm 1972, trong một trận bom dữ dội của không quân Mỹ, cửa hang bị sập hoàn toàn, khiến tám chiến sĩ thanh niên xung phong bị mắc kẹt bên trong. Dù đồng đội bên ngoài đã nỗ lực tìm mọi cách cứu hộ, nhưng do bom đạn đánh phá liên tục và địa hình hiểm trở, cả tám người đã anh dũng hy sinh trong lòng núi đá. Câu chuyện về Hang Tám Cô không chỉ phản ánh sự khốc liệt của chiến tranh, mà còn là biểu tượng sâu sắc cho tinh thần quả cảm, sự hy sinh thầm lặng và lòng yêu nước của thế hệ trẻ Việt Nam trong những năm tháng gian khổ. Ngày nay, Hang Tám Cô trở thành một địa chỉ đỏ mang giá trị lịch sử – tâm linh, là nơi tưởng niệm, tri ân những người đã ngã xuống vì độc lập, tự do của Tổ quốc, đồng thời góp phần giáo dục truyền thống cách mạng cho các thế hệ mai sau.",
-
+      "Hang Én được biết đến từ hàng trăm năm bởi người dân tộc Arem, nhưng được khám phá bởi các nhà thám hiểm Anh năm 1994. Tên gọi từ đàn chim én trú ngụ bên trong. Hang dài 1,6km, cao 100m, rộng 170m, là phần của hệ thống hang động Phong Nha-Kẻ Bàng và lối vào Hang Sơn Đoòng.",
     historyStory_en:
-      "The Eight Ladies Cave (Hang Tam Co) stands as one of the most tragic and sacred historical relics on the Ho Chi Minh Trail, located at kilometer 16+200 of Route 20 Quyet Thang—the vital artery connecting Eastern and Western Truong Son. The poignant story began on November 14, 1972, during the fiercest stage of the war against the US, when a horrific B-52 bombardment struck this area. To escape the rain of bombs, a squad of eight youth volunteers (4 men and 4 women, aged only 18 to 20) took shelter in a roadside cave. The immense force of the explosion caused a massive limestone boulder weighing over 1,000 tons to collapse, completely sealing the entrance and trapping the eight young souls inside. For nine consecutive days and nights, their comrades outside used every available means—from manual tools to heavy machinery and even explosives—to shift the rock, but the gargantuan boulder remained immovable. Through small crevices, rescuers could only pump in thin rice porridge while listening to the desperate cries for help from within, which gradually faded into the silence of the vast jungle. Their sacrifice became an immortal symbol of the 'Splitting the Truong Son to Save the Nation' spirit of the Vietnamese youth. In 2010, the group was posthumously honored with the title of Hero of the People's Armed Forces, and the cave has since become a sacred 'red address' where every inch of soil and every leaf is imbued with the blood and unyielding patriotism of these heroes.",
+      "En Cave has been known to the Arem ethnic people for centuries, but was explored by British cavers in 1994. Named after the swifts that nest inside, it is 1.6km long, 100m high, and 170m wide. Part of the Phong Nha-Ke Bang cave system, it serves as an entrance to Son Doong Cave and features its own beach and river.",
   },
   {
     id: 6,
-    name: "Hoành Sơn Quan",
-    name_en: "Hoanh Son Pass Gate",
-    category: "heritage",
-    type: "Di tích cửa ải",
+    name: "Động Thiên Đường",
+    name_en: "Paradise Cave",
+    category: "cave",
+    type: "Hang động dài nhất châu Á",
     description:
-      "Cửa ải nổi tiếng trong thơ Hồ Xuân Hương, chứng tích phân chia Đàng Trong - Đàng Ngoài.",
+      "Động Thiên Đường là hang động khô dài nhất châu Á, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, với hệ thống thạch nhũ đẹp như cung điện.",
     description_en:
-      "Famous pass gate in Ho Xuan Huong's poetry, evidence of Dang Trong - Dang Ngoai division.",
-    address: "Xã Phú Trạch, tỉnh Quảng Trị",
-    lat: 17.956420783081235,
-    lng: 106.46957838110254,
-    rating: 4.6,
-    reviews: 1823,
-    price: "Miễn phí",
-    image: "https://statics.vinpearl.com/hoanh-son-quan-1_1634298813.jpg",
-    thumbnail: "https://statics.vinpearl.com/hoanh-son-quan-1_1634298813.jpg",
+      "Paradise Cave is Asia's longest dry cave, located in Phong Nha-Ke Bang National Park, featuring stunning stalactites resembling a palace.",
+    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    lat: 17.51947184574964,
+    lng: 106.22357457499751,
+    rating: 4.9,
+    reviews: 2000,
+    price: "250.000 VNĐ",
+    image: "https://statics.vinpearl.com/dong-thien-duong-3334_1627990501.jpg",
+    thumbnail:
+      "https://statics.vinpearl.com/dong-thien-duong-3334_1627990501.jpg",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1fOEfzbd_iLQi457XobII4Nvn2mKEtg8dg&s",
-      "https://quangbinhtravel.vn/wp-content/uploads/2024/09/hoanh-son-quan-1.jpg",
-      "https://phongnhainfo.com/wp-content/uploads/2023/12/Hoanh-Son-Quan.jpg",
-      "https://gcs.tripi.vn/public-tripi/tripi-feed/img/476159rTe/anh-mo-ta.png",
-      "https://sgtt.thesaigontimes.vn/wp-content/uploads/2024/12/hoanh-son-quanh-6.jpg",
+      "https://api.sovaba.travel/uploads/Dong_thien_duong_duoc_vi_nhu_hoang_cung_trong_long_dat_cua_viet_nam_c07f78dd58.jpg",
+      "https://www.luavietours.com/wp/wp-content/uploads/2024/10/1-dong-thien-duong-noi-bat-voi-nhung-thach-nhu-lap-lanh-toa-lac-tai-quang-binh-750x437.jpg",
+      "https://changchangfamily.com/wp-content/uploads/2023/03/kinh-nghiem-du-lich-dong-thien-duong-6.jpg",
     ],
     hours: "07:00 - 17:00",
     highlights: [
-      "Cửa ải lịch sử",
-      "Đèo Ngang",
-      "Thơ Hồ Xuân Hương",
-      "Biên giới xưa",
+      "Thạch nhũ đẹp như cung điện",
+      "Hang khô dài 31km",
+      "Hệ thống chiếu sáng hiện đại",
+      "Đường gỗ dễ đi",
     ],
     historyStory:
-      "Hoành Sơn Quan là một di tích lịch sử quan trọng nằm trên đỉnh đèo Ngang, gắn liền với quá trình xác lập chủ quyền, quản lý lãnh thổ và bảo vệ biên cương của quốc gia trong lịch sử phong kiến Việt Nam. Công trình được xây dựng vào năm 1833 dưới triều vua Minh Mạng, như một cửa ải quân sự án ngữ con đường huyết mạch Bắc – Nam, có nhiệm vụ kiểm soát giao thông, phòng thủ và bảo đảm an ninh khu vực ranh giới giữa Quảng Bình và Hà Tĩnh. Với vị trí hiểm yếu “lưng tựa núi, mặt hướng biển”, Hoành Sơn Quan không chỉ thể hiện tư duy quân sự chiến lược của triều đình nhà Nguyễn, mà còn phản ánh vai trò đặc biệt của vùng đất Quảng Bình trong lịch sử giữ nước. Trải qua thời gian và nhiều biến động lịch sử, công trình vẫn còn lưu giữ những dấu tích kiến trúc cổ kính, trở thành chứng nhân cho một giai đoạn lịch sử gắn liền với việc củng cố quốc phòng và quản lý lãnh thổ. Ngày nay, Hoành Sơn Quan không chỉ mang giá trị lịch sử – kiến trúc, mà còn là biểu tượng cho ý chí bảo vệ biên cương, tinh thần tự chủ và bản lĩnh của dân tộc Việt Nam qua các thời kỳ.",
-
+      "Động Thiên Đường được phát hiện năm 2005 bởi người dân địa phương, khám phá 5km đầu bởi Hiệp hội Hang động Anh, toàn bộ 31km sau đó. Tên gọi từ vẻ đẹp thạch nhũ như thiên đường. Là di sản UNESCO trong Phong Nha-Kẻ Bàng, mở cửa du lịch năm 2010.",
     historyStory_en:
-      "Hoanh Son Quan, also known as the 'Gate to Heaven,' is an ancient military and administrative architectural relic perched atop the Ngang Pass on the Hoanh Son Mountain Range, marking the border between Ha Tinh and Quang Binh provinces. Built in 1827 during the 8th year of King Minh Mang's reign, this gateway was designed with massive stone blocks in a traditional 'Tam Quan' style, radiating a majestic and solemn beauty amidst the vast wilderness. Historically, Hoanh Son Quan served as a strategic 'bottleneck' on the North-South Mandarin Road and a vital military checkpoint to control movement between regions. Most notably, it is associated with the Trinh-Nguyen conflict, when this mountain range acted as a natural boundary dividing the country into Dang Trong and Dang Ngoai. Beyond its military significance, the pass has been a timeless inspiration for Vietnamese literature and art; it is immortalized in the soul of the people through the classic verses of Bà Huyện Thanh Quan in her poem 'Passing Ngang Pass,' which depicts a nostalgic longing before the setting sun. Despite the ravages of time and war, Hoanh Son Quan remains a steadfast historical landmark, testifying to the strategic vision of ancestors in preserving and protecting the nation's integrity.",
+      "Paradise Cave was discovered in 2005 by a local, with the first 5km explored by the British Cave Research Association, and the full 31km later. Named for its paradise-like stalactites, it is part of UNESCO's Phong Nha-Ke Bang and opened for tourism in 2010.",
   },
   {
     id: 7,
-    name: "Vũng Chùa - Đảo Yến",
-    name_en: "Vung Chua - Yen Island",
-    category: "heritage",
-    type: "Khu lưu niệm Đại tướng Võ Nguyên Giáp",
+    name: "Bãi biển Nhật Lệ",
+    name_en: "Nhat Le Beach",
+    category: "nature",
+    type: "Bãi biển đẹp",
     description:
-      "Nơi an nghỉ của Đại tướng Võ Nguyên Giáp và mộ phần gia đình.",
-    description_en: "Resting place of General Vo Nguyen Giap and family tombs.",
-    address: "Đảo yến thuộc xã Phú Trạch, tỉnh Quảng Trị",
-    lat: 17.911745812446178,
-    lng: 106.49457544348924,
-    rating: 4.9,
-    reviews: 6234,
-    price: "Miễn phí",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/26/c7/2f/vung-chua-d-o-y-n-noi.jpg?w=900&h=-1&s=1",
-    thumbnail:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/26/c7/2f/vung-chua-d-o-y-n-noi.jpg?w=900&h=-1&s=1",
-    gallery: [
-      "https://pvv-photo.phuotvivu.com/res/photo/c/4/f/0/s0x0/4ebb8323e2ea2492b9ce0809c44a72c4",
-      "https://tourdulichquangbinh.vn/wp-content/uploads/2022/01/vung-chua-dao-yen.jpg",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/26/c7/2f/vung-chua-d-o-y-n-noi.jpg?w=900&h=-1&s=1",
-      "https://images2.thanhnien.vn/zoom/686_429/528068263637045248/2025/10/4/screenshot-1395-175954262067898374134-0-77-716-1223-crop-17595426591722016737136.png",
-      "https://dulichnewtour.vn/ckfinder/images/vung-chua-dao-yen%20(9).jpg",
-    ],
-    hours: "07:00 - 17:00",
-    highlights: [
-      "Mộ Đại tướng",
-      "Biển đẹp",
-      "Nơi tưởng niệm",
-      "Cảnh quan thiên nhiên",
-    ],
-    historyStory:
-      "Vũng Chùa – Đảo Yến là một địa danh mang ý nghĩa lịch sử – văn hóa đặc biệt, gắn liền với tên tuổi và sự nghiệp của Võ Nguyên Giáp – vị Đại tướng huyền thoại của dân tộc Việt Nam. Nơi đây được Đại tướng lựa chọn làm nơi an nghỉ cuối cùng, thể hiện nguyện vọng trở về với đất mẹ, hòa mình vào thiên nhiên và quê hương đất nước. Vũng Chùa – Đảo Yến mang vẻ đẹp thanh bình, tĩnh lặng, đối lập với những năm tháng chiến tranh ác liệt mà Đại tướng đã trải qua, như một biểu tượng của hòa bình, sự giản dị và nhân cách lớn lao của ông. Từ khi trở thành nơi yên nghỉ của Đại tướng Võ Nguyên Giáp, Vũng Chùa – Đảo Yến không chỉ là điểm đến tâm linh thiêng liêng, mà còn là nơi để người dân và du khách bày tỏ lòng tri ân sâu sắc đối với một con người đã dành trọn đời mình cho độc lập, tự do của Tổ quốc. Địa danh này ngày nay mang giá trị tinh thần sâu sắc, góp phần giáo dục truyền thống yêu nước, lòng biết ơn và niềm tự hào dân tộc cho các thế hệ mai sau.",
-
-    historyStory_en:
-      "Vung Chua - Yen Island is a sacred landmark nestled at the foot of the majestic Hoanh Son mountain range in Quang Dong commune, Quang Trach district, Quang Binh province. This site has become a convergence point for the hearts of millions of Vietnamese people since it was chosen as the final resting place of General Vo Nguyen Giap, in accordance with his last wishes. Vung Chua is a sheltered bay, protected by three islands: Yen Island, Gio Island, and La Island, creating a feng-shui terrain described as 'crouching tiger, hidden dragon' facing the vast East Sea. Following the General's passing on October 4, 2013, a solemn tomb area was constructed on Tho Son Mountain, crafted entirely from solid blue stone brought from Thanh Hoa province. With a simple yet majestic architectural style, the tomb is not only a memorial for a world-class military genius but also a symbol of the profound bond between the legendary General and his sun-drenched, wind-swept homeland of Quang Binh. Every year, tens of thousands of people from all over the country make a pilgrimage here to offer incense and express deep gratitude to the 'Eldest Brother' of the Vietnam People's Army, who devoted his entire life to the nation's independence and freedom.",
-  },
-  {
-    id: 8,
-    name: "Lăng mộ Nguyễn Hữu Cảnh",
-    name_en: "Nguyen Huu Canh Tomb",
-    category: "heritage",
-    type: "Di tích khai phá phương Nam",
-    description:
-      "Lăng mộ của Lễ Thành Hầu Nguyễn Hữu Cảnh - người có công mở mang bờ cõi phương Nam.",
+      "Bãi biển Nhật Lệ là bãi biển nổi tiếng ở Quảng Bình với cát trắng mịn, nước trong xanh và sóng nhẹ, nằm ngay trung tâm thành phố Đồng Hới.",
     description_en:
-      "Tomb of Le Thanh Hau Nguyen Huu Canh - pioneer of southern expansion.",
-    address: "xã Trường Phú, tỉnh Quảng Trị",
-    lat: 17.15,
-    lng: 106.85,
+      "Nhat Le Beach is a famous beach in Quang Binh with soft white sand, clear turquoise water, and gentle waves, located in the heart of Dong Hoi City.",
+    address: "Phường Đồng Phú, TP. Đồng Hới, tỉnh Quảng Bình",
+    lat: 17.494138739258215,
+    lng: 106.62644433656853,
     rating: 4.5,
-    reviews: 2145,
+    reviews: 500,
     price: "Miễn phí",
     image:
-      "https://quangbinhtravel.vn/wp-content/uploads/2024/09/lang-mo-nguyen-huu-canh-quang-binh.jpg",
+      "https://cms.junglebosstours.com/assets/7324a7df-edde-41cb-890e-06c93ec2fe61?width=1920&height=1080",
     thumbnail:
-      "https://quangbinhtravel.vn/wp-content/uploads/2024/09/lang-mo-nguyen-huu-canh-quang-binh.jpg",
+      "https://cms.junglebosstours.com/assets/7324a7df-edde-41cb-890e-06c93ec2fe61?width=1920&height=1080",
     gallery: [
-      "https://vcdn1-dulich.vnecdn.net/2022/01/06/6-DJI-0720-1641444501.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DkLNK4r0RMC2KBEomkYQBw",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ahvBZ2Jpzg1v6wjAa952_QKwAglavp7Dpg&s",
-      "https://api.sovaba.travel/uploads/sm_Lang_mo_Le_Thanh_hau_Nguyen_Huu_Canh_dc24c21dc9.jpg",
-      "https://linhhungtourist.com.vn/wp-content/uploads/2023/09/lang-mo-nguyen-huu-canh-quang-binh-5.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsw2P9PGOvXKtR6MOQFEEeCcQKbra1U_Jug&s",
+      "https://dulichnewtour.vn/ckfinder/images/bien-nhat-le%20(15).jpg",
+      "https://dntt.mediacdn.vn/uploads/images/Nh%E1%BB%AF%20%C4%90%E1%BB%A9c%20Hi%E1%BA%BFu/2020/05/06/picture1.jpg",
+      "https://bluediamondretreat.com/wp-content/uploads/2025/05/2-1500x1000-1.jpg",
+      "https://statics.vinpearl.com/bien-nhat-le-1_1629783746.png",
     ],
     hours: "24/7",
     highlights: [
-      "Lăng mộ cổ",
-      "Nhân vật lịch sử",
-      "Khai phá phương Nam",
-      "Di tích cấp quốc gia",
+      "Cát trắng mịn",
+      "Nước biển trong xanh",
+      "Sóng nhẹ phù hợp tắm biển",
+      "Gần trung tâm thành phố",
     ],
     historyStory:
-      "Lăng mộ Nguyễn Hữu Cảnh là di tích lịch sử gắn liền với cuộc đời và sự nghiệp của Nguyễn Hữu Cảnh – vị danh tướng có công lớn trong quá trình mở mang bờ cõi và xác lập chủ quyền của Đại Việt về phương Nam vào cuối thế kỷ XVII. Ông là người được chúa Nguyễn giao trọng trách kinh lược vùng đất Nam Bộ, tổ chức bộ máy hành chính, ổn định đời sống dân cư và đặt nền móng cho sự hình thành, phát triển lâu dài của vùng Gia Định – Đồng Nai. Sau khi qua đời, lăng mộ của ông được nhân dân và triều đình tôn tạo như một sự ghi nhận công lao to lớn đối với quốc gia. Trải qua nhiều biến động lịch sử, lăng mộ Nguyễn Hữu Cảnh không chỉ là nơi an nghỉ của một bậc công thần khai quốc, mà còn trở thành biểu tượng cho tinh thần mở cõi, ý chí kiên cường và tầm nhìn chiến lược của cha ông trong công cuộc xây dựng và bảo vệ lãnh thổ. Ngày nay, di tích mang giá trị lịch sử sâu sắc, góp phần nhắc nhớ các thế hệ sau về truyền thống yêu nước, lòng trung nghĩa và vai trò quan trọng của Nguyễn Hữu Cảnh trong tiến trình hình thành đất nước Việt Nam thống nhất từ Bắc chí Nam.",
-
+      "Bãi biển Nhật Lệ nằm ở cửa sông Nhật Lệ đổ ra biển Đông, là địa danh nổi tiếng ở Quảng Bình từ thời xưa. Tên gọi từ sông Nhật Lệ, gắn với nhiều sự kiện lịch sử và văn hóa địa phương. Ngày nay là điểm du lịch biển phổ biến, kết hợp với các di tích gần đó.",
     historyStory_en:
-      "The Tomb of Nguyen Huu Canh is a profoundly sacred national historical site, the final resting place of a pioneer who played a primary role in shaping the modern S-shaped map of Vietnam. Marquis Nguyen Huu Canh (1650 - 1700), also known as Nguyen Huu Kinh, was born into a prestigious lineage of military officers in Van Ninh, Quang Ninh district, Quang Binh province. As a descendant of the legendary statesman Nguyen Trai, he inherited the elite traditions of a clan renowned for both literary and military brilliance. In 1698, under the orders of Lord Nguyen Phuc Chu, he led a historic expedition to the South, establishing the Gia Dinh Prefecture and officially incorporating the Dong Nai - Saigon region into the administrative map of Dang Trong. This monumental achievement laid the firm foundation for the reclamation and sovereign establishment of the Southern territories. Following his passing due to illness during a military campaign in 1700, his remains were brought back to be interred in his beloved homeland. The current tomb complex sits majestically on a hill within the An Ma mountain range, overlooking the winding Kien Giang River. Constructed with ancient blue stones and surrounded by the serene atmosphere of the mountains, this site is not merely a memorial to a military genius and an outstanding administrator but also a symbol of patriotism and the indomitable spirit of expansion. For over 300 years, through the countless upheavals of history, the tomb has stood as a spiritual landmark, reminding future generations of the silent sacrifice of a hero who devoted his life to the territorial integrity and prosperity of the Vietnamese nation.",
+      "Nhat Le Beach is located at the mouth of the Nhat Le River flowing into the East Sea, a famous landmark in Quang Binh since ancient times. Named after the river, it is linked to local history and culture. Today, it is a popular beach tourism spot, combined with nearby heritage sites.",
+  },
+  {
+    id: 8,
+    name: "Suối nước Moọc",
+    name_en: "Mooc Spring",
+    category: "nature",
+    type: "Suối nước thiên nhiên",
+    description:
+      "Suối nước Moọc là khu du lịch sinh thái với dòng suối trong xanh, rừng cây bao quanh, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, phù hợp cho các hoạt động tắm suối và khám phá.",
+    description_en:
+      "Mooc Spring is an eco-tourism site with clear blue streams, surrounded by forest, located in Phong Nha-Ke Bang National Park, ideal for swimming and exploration.",
+    address: "Xã Phúc Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    lat: 17.556874493860484,
+    lng: 106.23818999828748,
+    rating: 4.5,
+    reviews: 53,
+    price: "180.000 VNĐ",
+    image:
+      "https://oxalisadventure.com/uploads/2023/02/nuocmooc__638113576680039190.jpg",
+    thumbnail:
+      "https://oxalisadventure.com/uploads/2023/02/nuocmooc__638113576680039190.jpg",
+    gallery: [
+      "http://phongnhatourism.com.vn/images/IMG_2125.jpg",
+      "https://cms.junglebosstours.com/assets/a035a31b-450c-4f5b-aa91-dabcd654c610?width=1920&height=1080",
+      "https://statics.vinpearl.com/suoi-nuoc-mooc--_1629695174.jpg",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Dòng suối mát lạnh",
+      "Rừng nguyên sinh bao quanh",
+      "Hoạt động kayak, zipline",
+      "Gần động Phong Nha",
+    ],
+    historyStory:
+      "Suối nước Moọc được khám phá và phát triển thành khu du lịch sinh thái từ năm 2010, nằm trong hệ sinh thái Phong Nha-Kẻ Bàng. Tên 'Moọc' nghĩa là 'mọc lên' từ dòng nước ngầm phun trào. Là nơi thư giãn giữa thiên nhiên, gắn với hệ thống hang động gần đó.",
+    historyStory_en:
+      "Mooc Spring was developed as an eco-tourism site in 2010, part of Phong Nha-Ke Bang ecosystem. 'Mooc' means 'sprouting' from underground water gushing up. It offers relaxation in nature, connected to nearby caves.",
   },
   {
     id: 9,
-    name: "Đền thờ Công chúa Liễu Hạnh",
-    name_en: "Princess Lieu Hanh Temple",
-    category: "heritage",
-    type: "Di tích tín ngưỡng",
+    name: "Cồn cát Quang Phú",
+    name_en: "Quang Phu Sand Dunes",
+    category: "nature",
+    type: "Cồn cát sa mạc",
     description:
-      "Đền thờ Thánh Mẫu Liễu Hạnh - một trong Tứ bất tử của dân gian Việt Nam.",
+      "Cồn cát Quang Phú là khu vực đồi cát trắng mịn gần Đồng Hới, với cảnh quan như sa mạc, phù hợp trượt cát và chụp ảnh.",
     description_en:
-      "Temple dedicated to Holy Mother Lieu Hanh, one of Vietnam's Four Immortals.",
-    address: "Gần Đèo Ngang",
-    lat: 17.953371853739956,
-    lng: 106.46862386178672,
-    rating: 4.4,
-    reviews: 1567,
+      "Quang Phu Sand Dunes are white sand hills near Dong Hoi, resembling a desert landscape, ideal for sandboarding and photography.",
+    address: "Xã Quang Phú, TP. Đồng Hới, tỉnh Quảng Bình",
+    lat: 17.531452319901103,
+    lng: 106.59462747712249,
+    rating: 4.5,
+    reviews: 100,
     price: "Miễn phí",
     image:
-      "https://cdn.nhandan.vn/images/1ef398c4e2fb4bf07980a2ded785b3ef5dbd64547caaf87285f6077ef7b3b7ab8df787fc03613cc2b2c58554c30b41f3b4a8989e234532edd9ba4e5a5de924c002477dacb7745cc4f5f9ad33cbcbec23/1729331688837-4852.jpeg",
+      "https://mia.vn/media/uploads/blog-du-lich/con-cat-quang-phu-thien-duong-cat-voi-nhung-khoanh-khac-vo-cung-dang-nho-01-1653148857.jpeg",
     thumbnail:
-      "https://cdn.nhandan.vn/images/1ef398c4e2fb4bf07980a2ded785b3ef5dbd64547caaf87285f6077ef7b3b7ab8df787fc03613cc2b2c58554c30b41f3b4a8989e234532edd9ba4e5a5de924c002477dacb7745cc4f5f9ad33cbcbec23/1729331688837-4852.jpeg",
+      "https://mia.vn/media/uploads/blog-du-lich/con-cat-quang-phu-thien-duong-cat-voi-nhung-khoanh-khac-vo-cung-dang-nho-01-1653148857.jpeg",
     gallery: [
-      "https://mia.vn/media/uploads/blog-du-lich/ghe-tham-den-tho-thanh-mau-lieu-hanh-quang-binh-linh-thieng-01-1652685072.jpeg",
-      "https://quangbinhtourism.vn/wp-content/uploads/2019/06/den-thanh-mau-lieu-hanh-cong-chua-01.jpg",
-      "https://statics.vinpearl.com/den-mau-lieu-hanh-1_1634804143.jpg",
-      "https://baoquangbinh.vn/dataimages/202402/original/images775355_1.jpg",
-      "https://phongnhaexplorer.com/wp-content/uploads/2018/08/den-tho-cong-chua-lieu-hanh-2.jpg",
+      "https://dulichnewtour.vn/ckfinder/images/Tours/concatquangphuquangbinh/con-cat-quang-phu-quang-binh%20(1).jpg",
+      "https://quangbinhgo.com/wp-content/uploads/2022/09/anh-dep-con-cat-quang-phu-quang-binh-go3.jpg",
+      "https://dulichnewtour.vn/ckfinder/images/Tours/concatquangphuquangbinh/con-cat-quang-phu-quang-binh%20(4).jpg",
     ],
-    hours: "06:00 - 18:00",
+    hours: "07:00 - 18:00",
     highlights: [
-      "Tín ngưỡng dân gian",
-      "Thánh Mẫu Liễu Hạnh",
-      "Kiến trúc đền thờ",
-      "Lễ hội hàng năm",
+      "Đồi cát trắng cao",
+      "Hoạt động trượt cát",
+      "Cảnh quan sa mạc",
+      "Gần biển",
     ],
     historyStory:
-      "Đền thờ Công chúa Liễu Hạnh là một di tích tâm linh quan trọng, gắn liền với tín ngưỡng dân gian và đời sống tinh thần của người Việt qua nhiều thế kỷ. Công chúa Liễu Hạnh được tôn vinh là một trong Tứ Bất Tử trong tín ngưỡng dân gian Việt Nam, biểu trưng cho quyền năng, đức độ và sự che chở đối với con người. Theo truyền thuyết, bà nhiều lần giáng trần, sống gần gũi với nhân dân, giúp đỡ người hiền lương, trừng phạt kẻ ác và bảo vệ công lý, qua đó thể hiện khát vọng về công bằng, nhân ái và cuộc sống tốt đẹp. Việc lập đền thờ Công chúa Liễu Hạnh không chỉ thể hiện lòng tôn kính của nhân dân đối với một nhân vật linh thiêng, mà còn phản ánh sự hình thành và phát triển của tín ngưỡng thờ Mẫu – một nét văn hóa đặc sắc của dân tộc Việt Nam. Ngày nay, đền thờ Công chúa Liễu Hạnh không chỉ là nơi sinh hoạt tâm linh, cầu bình an và may mắn, mà còn mang giá trị lịch sử – văn hóa sâu sắc, góp phần gìn giữ bản sắc văn hóa truyền thống và giáo dục các thế hệ sau về niềm tin, đạo lý và đời sống tinh thần của cha ông.",
-
+      "Cồn cát Quang Phú hình thành từ cát biển tích tụ, là địa danh tự nhiên gần Đồng Hới. Được phát triển thành khu vui chơi với ATV và trượt cát từ những năm gần đây, thu hút du khách yêu thích mạo hiểm.",
     historyStory_en:
-      "The Temple of Princess Lieu Hanh, situated at the foot of the majestic Ngang Pass in Quang Dong commune, Quang Trach district, is one of the most sacred spiritual sites in Quang Binh province. The temple is dedicated to Mother Lieu Hanh—the supreme deity in the Vietnamese Mother Goddess worship (Dao Mau) and one of the 'Four Immortals' in Vietnamese mythology. According to legend, after her incarnations in Nam Dinh and Thanh Hoa, she was captivated by the picturesque landscape of Ngang Pass and decided to descend here. She transformed into a fairy running a roadside tea shop to assist virtuous travelers and punish the wicked. Built during the Later Le Dynasty and renovated multiple times, the temple showcases traditional architecture across an area of nearly 350 square meters. Notably, the temple occupies a prestigious feng-shui position: 'leaning against the mountain and facing the water,' with the Hoanh Son range behind it and the vast East Sea in front, creating a serene and majestic atmosphere. This relic is not only a testament to the cultural exchange as Mother Goddess worship spread southward but also a place that upholds moral values of compassion and justice. Every Lunar New Year, thousands of pilgrims gather here to pray for peace and admire the ancient, tranquil beauty of a landmark deeply intertwined with national history and poetry.",
+      "Quang Phu Sand Dunes formed from accumulated sea sand, a natural site near Dong Hoi. Developed into a recreational area with ATV and sandboarding in recent years, attracting adventure seekers.",
+  },
+  {
+    id: 10,
+    name: "Thành cổ Quảng Trị",
+    name_en: "Quang Tri Citadel",
+    category: "heritage",
+    type: "Di tích lịch sử chiến tranh",
+    description:
+      "Thành cổ Quảng Trị là di tích lịch sử nổi tiếng, chứng kiến trận đánh 81 ngày đêm năm 1972 trong chiến tranh Việt Nam.",
+    description_en:
+      "Quang Tri Citadel is a famous historical site, witness to the 81-day battle in 1972 during the Vietnam War.",
+    address: "Thị trấn Quảng Trị, tỉnh Quảng Trị",
+    lat: 16.753786203407536,
+    lng: 107.18946973108541,
+    rating: 4.7,
+    reviews: 2500,
+    price: "Miễn phí",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/Th%C3%A0nh_c%E1%BB%95_Qu%E1%BA%A3ng_Tr%E1%BB%8B_4.jpg",
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/Th%C3%A0nh_c%E1%BB%95_Qu%E1%BA%A3ng_Tr%E1%BB%8B_4.jpg",
+    gallery: [
+      "https://api.sovaba.travel/uploads/kien_truc_thanh_co_quang_tri_d1b53613e7.jpg",
+      "https://file3.qdnd.vn/data/images/0/2022/07/25/phucthang/a%203%20qt.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPZDO_jr9PJik1Lwwfiuf_7yOQ18Rk_yVAA&s",
+      "https://rangdong.com.vn/uploads/news/Chieu-sang-canh-quan/4/Thanh-co-quang-tri-3.png",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Di tích 81 ngày đêm",
+      "Bảo tàng chiến tranh",
+      "Tường thành cổ",
+      "Nơi tưởng niệm anh hùng",
+    ],
+    historyStory:
+      "Thành cổ Quảng Trị được xây dựng từ thời nhà Nguyễn năm 1824, nhưng nổi tiếng với trận đánh kéo dài 81 ngày đêm năm 1972 giữa Quân Giải phóng miền Nam và quân Mỹ - Ngụy. Đây là một trong những trận đánh ác liệt nhất chiến tranh Việt Nam, với hàng ngàn chiến sĩ hy sinh. Sau chiến tranh, thành cổ được bảo tồn như di tích lịch sử, trở thành biểu tượng cho tinh thần anh dũng và hy sinh vì độc lập dân tộc. Ngày nay, nơi đây là địa chỉ đỏ giáo dục truyền thống cách mạng, thu hút du khách tìm hiểu lịch sử.",
+    historyStory_en:
+      "Quang Tri Citadel was built in 1824 during the Nguyen Dynasty, but is famous for the 81-day and night battle in 1972 between the Southern Liberation Army and US-South Vietnamese forces. It was one of the fiercest battles in the Vietnam War, with thousands of soldiers sacrificed. After the war, the citadel was preserved as a historical site, becoming a symbol of courage and sacrifice for national independence. Today, it is a red address for revolutionary education, attracting visitors to learn about history.",
+  },
+  {
+    id: 11,
+    name: "Nghĩa trang liệt sĩ Trường Sơn",
+    name_en: "Truong Son National Martyrs Cemetery",
+    category: "heritage",
+    type: "Nghĩa trang liệt sĩ",
+    description:
+      "Nghĩa trang liệt sĩ Trường Sơn là nơi an nghỉ của hơn 10.000 liệt sĩ hy sinh trên đường mòn Hồ Chí Minh trong chiến tranh Việt Nam.",
+    description_en:
+      "Truong Son National Martyrs Cemetery is the resting place of over 10,000 martyrs who sacrificed on the Ho Chi Minh Trail during the Vietnam War.",
+    address: "Xã Vĩnh Trường, huyện Gio Linh, tỉnh Quảng Trị",
+    lat: 16.958235769424274,
+    lng: 106.95476457498951,
+    rating: 4.8,
+    reviews: 1800,
+    price: "Miễn phí",
+    image:
+      "https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980388d3f305fb2b584271ce9dccb251e8b9988358c0cc99209091137eb1cbd672fe5763322f4c6a7dba22c3811df09d0965e94563a6ce229e3cb5931269209e289e787b191566dafe0cbd8b3e807c8df2016d6d9d058796d451f6a3dca4310e90c/z6376692428183-25dd081e14af88111bef1bb74662760d-2766-6668.jpg",
+    thumbnail:
+      "https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980388d3f305fb2b584271ce9dccb251e8b9988358c0cc99209091137eb1cbd672fe5763322f4c6a7dba22c3811df09d0965e94563a6ce229e3cb5931269209e289e787b191566dafe0cbd8b3e807c8df2016d6d9d058796d451f6a3dca4310e90c/z6376692428183-25dd081e14af88111bef1bb74662760d-2766-6668.jpg",
+    gallery: [
+      "https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980388d3f305fb2b584271ce9dccb251e8b9988358c0cc99209091137eb1cbd672ffcc5d64056f9ebad6bf247ca6afbf175bceb4528081d5a72d3f1afc11378325542495d75957c2de3e2f9e2379ab5cd718e32c1b9457b68e1039cad26efb6187f/z6376997557438-ed77ceda6e77aadf10c0cb2de144d595-8420-2603.jpg",
+      "https://cdnmedia.baotintuc.vn/Upload/pTMF1jgWpbjY1m8G1xWUsg/files/2023/07/nghiatrangtruongson/lietsy0894.jpg",
+      "https://moitruongxaydungvn.vn/uploads/images/Qu%C3%BD%202-2023/1-C%C3%B3%20ng%C6%B0%E1%BB%9Di%20tr%E1%BA%BB%20%C4%91%C3%A3%20kh%C3%B3c%20-240723-jpg.jpg",
+      "https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980388d3f305fb2b584271ce9dccb251e8b9988358c0cc99209091137eb1cbd672f00674ecfb2e4212a3ae8ab32e65ee32a5e626d5650608ce67387bda6b20c0838c29edc3461f6155ac4733b520df65db141bb8b3017c4415df058775a1dc85670/z6376997555048-e92d1ed77ec71f015cf48d62fdfd2c71-6126-9845.jpg",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "An nghỉ hơn 10.000 liệt sĩ",
+      "Biểu tượng đường Trường Sơn",
+      "Khu tưởng niệm trang nghiêm",
+      "Cảnh quan xanh mát",
+    ],
+    historyStory:
+      "Nghĩa trang liệt sĩ Trường Sơn được xây dựng năm 1974 để tưởng niệm các liệt sĩ hy sinh trên đường mòn Hồ Chí Minh - tuyến đường huyết mạch chi viện miền Nam trong chiến tranh Việt Nam. Đây là nghĩa trang lớn nhất cả nước, với hơn 10.000 mộ phần từ khắp các tỉnh. Nơi đây không chỉ là nơi an nghỉ mà còn là biểu tượng cho sự hy sinh thầm lặng của thế hệ cha anh vì độc lập dân tộc. Hàng năm, nghĩa trang đón hàng vạn người đến viếng thăm, giáo dục truyền thống yêu nước.",
+    historyStory_en:
+      "Truong Son National Martyrs Cemetery was built in 1974 to commemorate martyrs who sacrificed on the Ho Chi Minh Trail - the vital supply route to the South during the Vietnam War. It is the largest cemetery in the country, with over 10,000 graves from all provinces. The site is not only a resting place but also a symbol of the silent sacrifice of previous generations for national independence. Annually, it receives tens of thousands of visitors for remembrance and patriotic education.",
+  },
+  {
+    id: 12,
+    name: "Cầu Hiền Lương - Sông Bến Hải",
+    name_en: "Hien Luong Bridge - Ben Hai River",
+    category: "heritage",
+    type: "Di tích giới tuyến",
+    description:
+      "Cầu Hiền Lương bắc qua sông Bến Hải là biểu tượng chia cắt hai miền Nam Bắc Việt Nam theo Hiệp định Genève 1954.",
+    description_en:
+      "Hien Luong Bridge over Ben Hai River is a symbol of the division between North and South Vietnam under the 1954 Geneva Accords.",
+    address: "Xã Vĩnh Thành, huyện Vĩnh Linh, tỉnh Quảng Trị",
+    lat: 17.004093440900014,
+    lng: 107.05149299827944,
+    rating: 4.6,
+    reviews: 2000,
+    price: "Miễn phí",
+    image:
+      "https://mia.vn/media/uploads/blog-du-lich/cau-hien-luong-phuc-dung-1754296893.jpg",
+    thumbnail:
+      "https://mia.vn/media/uploads/blog-du-lich/cau-hien-luong-phuc-dung-1754296893.jpg",
+    gallery: [
+      "https://i2-vnexpress.vnecdn.net/2024/08/13/20-1723453957-1723516541.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=32dM-kwyx26igWQSrJY7kg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVD0PTHOGbOqqpSaIM-etxZYJLnLgfZVPgA&s",
+      "https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng%207/Ng%C3%A0y_26/VI%E1%BA%BET%20B%C3%8AN%20C%E1%BA%A6U%20HI%E1%BB%80N%20L%C6%AF%C6%A0NG/3.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhT_R-8GXYfGkB-QwfBnuhigWj8Xo_TMCNw&s",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Biểu tượng chia cắt",
+      "Sông Bến Hải vĩ tuyến 17",
+      "Bảo tàng giới tuyến",
+      "Cảnh quan sông nước",
+    ],
+    historyStory:
+      "Cầu Hiền Lương và sông Bến Hải là giới tuyến tạm thời chia cắt Việt Nam thành hai miền theo Hiệp định Genève 1954. Cầu được sơn hai màu khác nhau tượng trưng cho sự chia cắt. Trong chiến tranh, nơi đây chứng kiến nhiều sự kiện đau thương, biểu tượng cho khát vọng thống nhất. Sau 1975, cầu được xây mới và trở thành di tích lịch sử, giáo dục về lịch sử dân tộc và giá trị hòa bình.",
+    historyStory_en:
+      "Hien Luong Bridge and Ben Hai River served as the temporary demarcation line dividing Vietnam into North and South under the 1954 Geneva Accords. The bridge was painted in two different colors symbolizing the division. During the war, it witnessed many tragic events, representing the desire for unification. After 1975, the bridge was rebuilt and became a historical site, educating about national history and the value of peace.",
+  },
+  {
+    id: 13,
+    name: "Địa đạo Vịnh Mốc",
+    name_en: "Vinh Moc Tunnels",
+    category: "heritage",
+    type: "Di tích hầm ngầm chiến tranh",
+    description:
+      "Địa đạo Vịnh Mốc là hệ thống hầm ngầm nơi dân làng trú ẩn và chiến đấu trong chiến tranh Việt Nam.",
+    description_en:
+      "Vinh Moc Tunnels are an underground tunnel system where villagers sheltered and fought during the Vietnam War.",
+    address: "Xã Vĩnh Thạch, huyện Vĩnh Linh, tỉnh Quảng Trị",
+    lat: 17.074487226731797,
+    lng: 107.11103908423439,
+    rating: 4.7,
+    reviews: 2200,
+    price: "40.000 VNĐ",
+    image:
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/101/075/articles/vm-5c18fd7b-6bf8-4b01-939b-8e9cb3959de0.jpg?v=1557391446250",
+    thumbnail:
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/101/075/articles/vm-5c18fd7b-6bf8-4b01-939b-8e9cb3959de0.jpg?v=1557391446250",
+    gallery: [
+      "https://api.sovaba.travel/uploads/sm_Xay_dung_dia_dao_Vinh_Moc_b9928b9cc5.png",
+      "https://image.plo.vn/Uploaded/2026/vocgmvlw/2025_04_26/dia-dao-vinh-moc-5-9261-3067.jpg",
+      "https://image.plo.vn/w1000/Uploaded/2025/vocgmvlw/2025_04_26/dia-dao-vinh-moc-13-4989-8696.jpg.webp",
+      "https://mia.vn/media/uploads/blog-du-lich/dia-dao-vinh-moc-3-1710467870.jpg",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Hệ thống hầm dài 2km",
+      "Nơi trú ẩn cho 60 hộ dân",
+      "Bảo tàng sống chiến tranh",
+      "Gần biển Vịnh Mốc",
+    ],
+    historyStory:
+      "Địa đạo Vịnh Mốc được dân làng đào từ năm 1966 để tránh bom Mỹ, dài gần 2km với 3 tầng, là nơi trú ẩn cho hơn 300 người trong 6 năm. Đây là biểu tượng cho sức sống bền bỉ của nhân dân trong chiến tranh. Sau chiến tranh, địa đạo được bảo tồn như di tích, thu hút du khách khám phá lịch sử kháng chiến.",
+    historyStory_en:
+      "Vinh Moc Tunnels were dug by villagers from 1966 to avoid US bombs, 2km long with 3 levels, sheltering over 300 people for 6 years. It is a symbol of the people's resilient life during the war. After the war, the tunnels were preserved as a relic, attracting visitors to explore resistance history.",
+  },
+  {
+    id: 14,
+    name: "Sân bay Tà Côn (Khe Sanh)",
+    name_en: "Ta Con Airport (Khe Sanh Combat Base)",
+    category: "heritage",
+    type: "Di tích căn cứ quân sự",
+    description:
+      "Sân bay Tà Côn là căn cứ quân sự quan trọng trong trận Khe Sanh năm 1968.",
+    description_en:
+      "Ta Con Airport was a key military base in the 1968 Khe Sanh battle.",
+    address: "Xã Tân Hợp, huyện Hướng Hóa, tỉnh Quảng Trị",
+    lat: 16.654463288214966,
+    lng: 106.72399705147586,
+    rating: 4.5,
+    reviews: 1500,
+    price: "Miễn phí",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjER3ZBcFIM-6nsXrdKJwzTACIabsXsYo0uA&s",
+    thumbnail:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjER3ZBcFIM-6nsXrdKJwzTACIabsXsYo0uA&s",
+    gallery: [
+      "https://bizweb.dktcdn.net/100/101/075/files/tc-83a4ad2b-d959-41c7-b993-b64a407a80a1.jpg?v=1557740583724",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxJ6f9sPl_QBP6swZMtNUKZqgHRej4xnKvAQ&s",
+      "https://bizweb.dktcdn.net/100/101/075/files/tc-1092dac4-78c0-48b6-921e-ac345c539445.jpg?v=1557740652230",
+      "https://quangbinhtravel.vn/wp-content/uploads/2025/10/Khe-Sanh-Combat-Base.jpg",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Căn cứ Khe Sanh",
+      "Bảo tàng chiến tranh",
+      "Máy bay, xe tăng trưng bày",
+      "Địa hình đồi núi",
+    ],
+    historyStory:
+      "Sân bay Tà Côn là căn cứ quan trọng của Mỹ trong chiến tranh Việt Nam, nơi diễn ra trận đánh Khe Sanh kéo dài 170 ngày năm 1968. Đây là một trong những trận đánh lớn, với mục đích phân tán lực lượng Quân Giải phóng. Sau 1975, nơi đây trở thành di tích lịch sử, với bảo tàng trưng bày hiện vật chiến tranh.",
+    historyStory_en:
+      "Ta Con Airport was a crucial US base during the Vietnam War, site of the 170-day Khe Sanh battle in 1968. It aimed to divert Liberation Army forces. After 1975, it became a historical site with a museum displaying war artifacts.",
+  },
+  {
+    id: 15,
+    name: "Cửa khẩu Lao Bảo",
+    name_en: "Lao Bao Border Gate",
+    category: "heritage",
+    type: "Di tích biên giới",
+    description:
+      "Cửa khẩu Lao Bảo là cửa khẩu biên giới Việt - Lào, chứng kiến nhiều sự kiện lịch sử và thương mại.",
+    description_en:
+      "Lao Bao Border Gate is the Vietnam-Laos border crossing, witness to historical and commercial events.",
+    address: "Thị trấn Lao Bảo, huyện Hướng Hóa, tỉnh Quảng Trị",
+    lat: 16.623338568978106,
+    lng: 106.5911550516953,
+    rating: 4.4,
+    reviews: 1200,
+    price: "Miễn phí",
+    image:
+      "https://als.com.vn/api/file-management/file-descriptor/view/701c9962-7f20-e63e-c386-3a13d5be8ad3",
+    thumbnail:
+      "https://als.com.vn/api/file-management/file-descriptor/view/701c9962-7f20-e63e-c386-3a13d5be8ad3",
+    gallery: [
+      "https://media.thuonghieucongluan.vn/uploads/2021/02/05/cua-khau-lao-bao-2-1612482590.jpg",
+      "https://vnanet.vn/Data/Articles/2020/05/28/4731193/vna_potal_quang_tri_lao_bao_-_cua_khau_kieu_mau_tren_tuyen_bien_gioi_viet_%E2%80%93_lao_180801868_stand.jpg",
+      "https://media-cdn-v2.laodong.vn/Storage/newsportal/2019/1/20/653314/A4-Copy.jpg",
+    ],
+    hours: "07:00 - 17:00",
+    highlights: [
+      "Cửa khẩu Việt - Lào",
+      "Di tích thương mại biên giới",
+      "Cảnh quan núi non",
+      "Chợ biên giới sầm uất",
+    ],
+    historyStory:
+      "Cửa khẩu Lao Bảo được mở từ thời Pháp thuộc, là điểm giao thương quan trọng giữa Việt Nam và Lào. Trong chiến tranh, nơi đây là tuyến đường quan trọng trên đường mòn Hồ Chí Minh. Sau hòa bình, cửa khẩu phát triển thành khu kinh tế biên giới, biểu tượng cho quan hệ hữu nghị Việt - Lào.",
+    historyStory_en:
+      "Lao Bao Border Gate was opened during French colonial times, a key trade point between Vietnam and Laos. During the war, it was an important route on the Ho Chi Minh Trail. After peace, it developed into a border economic zone, symbolizing Vietnam-Laos friendship.",
   },
 ];
 
@@ -457,35 +676,36 @@ const categoryStyles = {
 // }
 
 function initMap() {
-  // 1. Định nghĩa ranh giới (vùng chữ nhật) bao quanh tỉnh Quảng Bình
-  // Tọa độ này bao gồm toàn bộ Quảng Bình và một chút lân cận để xem dễ dàng hơn
-  const quangBinhBounds = [
-    [16.8, 105.3], // Góc Tây Nam (Southwest)
-    [18.2, 107.2], // Góc Đông Bắc (Northeast)
+  // Bounds mở rộng để bao quát TOÀN BỘ Quảng Bình + Quảng Trị (và dư một chút)
+  const fullBounds = [
+    [16.4, 105.8], // Tây Nam (dưới Cửa khẩu Lao Bảo ~16.62)
+    [18.3, 108.0], // Đông Bắc (trên Quảng Bình)
   ];
 
   map = L.map("map", {
-    center: [17.6, 106.35],
-    zoom: 10,
+    center: [17.0, 106.8], // Center cân bằng giữa Quảng Bình và Quảng Trị
+    zoom: 8, // Zoom nhỏ hơn → thấy rộng ngay từ đầu
     zoomControl: false,
-    minZoom: 9, // Tăng minZoom lên một chút để không thấy vùng quá rộng
+    minZoom: 7, // Cho phép zoom out thêm nếu cần
     maxZoom: 18,
-    maxBounds: quangBinhBounds, // Gắn cứng ranh giới
-    maxBoundsViscosity: 1.0, // Độ "nhớt" = 1.0 nghĩa là bản đồ sẽ không cho phép kéo ra ngoài ranh giới dù chỉ 1 pixel
+    maxBounds: fullBounds, // Giới hạn kéo map (nhưng rộng hơn)
+    maxBoundsViscosity: 1.0, // Giữ map không thoát bounds
   });
 
-  // Sử dụng tile layer
+  // Tile layer (giữ nguyên)
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap contributors",
     maxZoom: 19,
   }).addTo(map);
 
-  // Thêm hiệu ứng mượt mà khi người dùng cố kéo ra ngoài
+  // Ngăn kéo ra ngoài bounds (giữ nguyên)
   map.on("drag", function () {
-    map.panInsideBounds(quangBinhBounds, { animate: false });
+    map.panInsideBounds(fullBounds, { animate: false });
   });
 
+  // Thêm marker và TỰ ĐỘNG FIT TOÀN BỘ để xem được hết 15 địa danh
   addMarkers();
+  showAllMarkers(); // Quan trọng: Tự động zoom fit tất cả marker ngay khi load
 }
 
 // Create custom marker với hình ảnh thật
@@ -1053,9 +1273,11 @@ function toggleLanguage() {
 
 function updateCategoryButtons() {
   const btns = document.querySelectorAll(".category-badge");
-  if (btns.length >= 2) {
+  if (btns.length >= 4) {
     btns[0].textContent = translations[currentLang].all;
-    btns[1].textContent = translations[currentLang].heritage;
+    btns[1].textContent = translations[currentLang].cave;
+    btns[2].textContent = translations[currentLang].heritage;
+    btns[3].textContent = translations[currentLang].nature;
     // Nếu có thêm button, dịch tiếp
   }
 }
