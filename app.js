@@ -1,9 +1,9 @@
 // Config
 const defaultConfig = {
-  platform_title: "Bản đồ Di sản Quảng Bình",
+  platform_title: "Bản đồ Di sản Quảng Trị",
   tagline: "Khám phá vương quốc hang động",
   welcome_message:
-    "Chào mừng bạn đến với di sản Quảng Bình - nơi hội tụ những kỳ quan thiên nhiên tuyệt đẹp",
+    "Chào mừng bạn đến với di sản Quảng Trị - nơi hội tụ những kỳ quan thiên nhiên tuyệt đẹp",
   primary_color: "#3b82f6",
   secondary_color: "#8b5cf6",
   accent_color: "#10b981",
@@ -18,10 +18,10 @@ let currentLang = "vi"; // 'vi' hoặc 'en'
 
 const translations = {
   vi: {
-    platform_title: "Bản đồ Di sản Quảng Bình",
-    tagline: "Khám phá di tích lịch sử Quảng Bình",
+    platform_title: "Bản đồ Di sản Quảng Trị",
+    tagline: "Khám phá di tích lịch sử Quảng Trị",
     welcome_message:
-      "Chào mừng bạn đến với di sản lịch sử Quảng Bình - vùng đất anh hùng và hào hùng",
+      "Chào mừng bạn đến với di sản lịch sử Quảng Trị - vùng đất anh hùng và hào hùng",
     search_placeholder: "Tìm di tích lịch sử...",
     all: "🌟 Tất cả",
     cave: "🏔️ Hang động",
@@ -67,7 +67,7 @@ const heritageData = [
       "Nơi sinh ra và lớn lên của Đại tướng Võ Nguyên Giáp - vị tướng huyền thoại của Quân đội Nhân dân Việt Nam.",
     description_en:
       "Birthplace and memorial of General Vo Nguyen Giap, legendary Vietnamese military leader.",
-    address: "xã Lộc Thủy, tỉnh Quảng Bình",
+    address: "xã Lộc Thủy, tỉnh Quảng Trị",
     lat: 17.243889296166603,
     lng: 106.74984629643421,
     rating: 4.9,
@@ -105,7 +105,7 @@ const heritageData = [
       "Cổng thành cổ duy nhất còn lại của hệ thống Lũy Thầy, xây dựng năm 1639.",
     description_en:
       "The only remaining ancient gate of the Thầy Rampart system, built in 1639.",
-    address: "Phường Đồng Hới, TP. Đồng Hới, tỉnh Quảng Bình",
+    address: "Phường Đồng Hới, TP. Đồng Hới, tỉnh Quảng Trị",
     lat: 17.46342816411765,
     lng: 106.62404015410861,
     rating: 4.7,
@@ -130,7 +130,7 @@ const heritageData = [
       "Trung tâm Đồng Hới",
     ],
     historyStory:
-      "Quảng Bình Quan là một trong những di tích lịch sử tiêu biểu gắn liền với quá trình hình thành và bảo vệ vùng đất Quảng Bình trong suốt nhiều thế kỷ. Công trình được xây dựng vào đầu thế kỷ XVII, dưới thời chúa Nguyễn, như một bộ phận quan trọng trong hệ thống phòng thủ quân sự nhằm bảo vệ ranh giới phía nam của Đàng Ngoài trong bối cảnh lịch sử phân tranh Trịnh – Nguyễn kéo dài. Với vị trí chiến lược, Quảng Bình Quan không chỉ là cổng thành kiểm soát giao thông và quân sự, mà còn là biểu tượng cho vai trò “phên dậu” của Quảng Bình trong lịch sử giữ nước. Trải qua nhiều biến cố lịch sử, chiến tranh và thời gian, công trình từng bị hư hại nặng nề nhưng đã được trùng tu, phục dựng để giữ gìn giá trị nguyên gốc. Ngày nay, Quảng Bình Quan không chỉ mang ý nghĩa là một dấu tích quân sự cổ, mà còn là chứng nhân lịch sử phản ánh tinh thần đấu tranh, ý chí bảo vệ lãnh thổ và truyền thống kiên cường của con người Quảng Bình qua các thời kỳ lịch sử.",
+      "Quảng Trị Quan là một trong những di tích lịch sử tiêu biểu gắn liền với quá trình hình thành và bảo vệ vùng đất Quảng Trị trong suốt nhiều thế kỷ. Công trình được xây dựng vào đầu thế kỷ XVII, dưới thời chúa Nguyễn, như một bộ phận quan trọng trong hệ thống phòng thủ quân sự nhằm bảo vệ ranh giới phía nam của Đàng Ngoài trong bối cảnh lịch sử phân tranh Trịnh – Nguyễn kéo dài. Với vị trí chiến lược, Quảng Bình Quan không chỉ là cổng thành kiểm soát giao thông và quân sự, mà còn là biểu tượng cho vai trò “phên dậu” của Quảng Trị trong lịch sử giữ nước. Trải qua nhiều biến cố lịch sử, chiến tranh và thời gian, công trình từng bị hư hại nặng nề nhưng đã được trùng tu, phục dựng để giữ gìn giá trị nguyên gốc. Ngày nay, Quảng Trị Quan không chỉ mang ý nghĩa là một dấu tích quân sự cổ, mà còn là chứng nhân lịch sử phản ánh tinh thần đấu tranh, ý chí bảo vệ lãnh thổ và truyền thống kiên cường của con người Quảng Trị qua các thời kỳ lịch sử.",
 
     historyStory_en:
       "Quang Binh Quan is not merely an architectural monument but a brilliant symbol of 17th-century Vietnamese military history. Built in 1639 under the reign of Lord Nguyen Phuc Lan, it served as one of the most critical checkpoints within the legendary Thay Rampart (Dao Duy Tu Rampart). This defensive system enabled the Nguyen Lords to withstand numerous attacks from the Trinh Lords, effectively dividing the country into Dang Trong and Dang Ngoai for over two centuries. Positioned at a strategic 'bottleneck' on the North-South Mandarin Road, Quang Binh Quan functioned as a 'steel gate,' controlling all movement and serving as a survival boundary for the southern realm. Throughout centuries of upheaval—from the fierce Trinh-Nguyen civil wars to modern resistance against foreign invaders—the gate was damaged multiple times and subsequently restored. Today, Quang Binh Quan stands proudly in the heart of Dong Hoi City as a majestic historical witness, reminding future generations of the masterful military wisdom and the unyielding determination of their ancestors to protect the national borders.",
@@ -145,7 +145,7 @@ const heritageData = [
       "Tưởng niệm Mẹ Nguyễn Thị Suốt - người anh hùng chèo đò đưa bộ đội qua sông Nhật Lệ.",
     description_en:
       "Monument to Mother Nguyen Thi Suot, heroine who ferried soldiers across Nhat Le River.",
-    address: "Phường Đồng Hới, TP Đồng Hới, tỉnh Quảng Bình",
+    address: "Phường Đồng Hới, TP Đồng Hới, tỉnh Quảng Trị",
     lat: 17.459210733447197,
     lng: 106.62537488109533,
     rating: 4.8,
@@ -170,7 +170,7 @@ const heritageData = [
       "View sông Nhật Lệ",
     ],
     historyStory:
-      "Tượng đài Mẹ Suốt là công trình tưởng niệm gắn liền với hình tượng Nguyễn Thị Suốt – người mẹ anh hùng tiêu biểu cho tinh thần quật cường của nhân dân Quảng Bình trong thời kỳ kháng chiến chống Mỹ. Trong những năm chiến tranh ác liệt, khi tuyến đường và dòng sông trở thành mục tiêu đánh phá, Mẹ Suốt đã không quản hiểm nguy, ngày đêm chèo đò đưa bộ đội, vũ khí và lương thực vượt sông, góp phần giữ vững mạch giao thông chiến lược phục vụ tiền tuyến. Hình ảnh người mẹ lam lũ, kiên cường giữa bom đạn đã trở thành biểu tượng sống động cho lòng yêu nước, sự hy sinh thầm lặng và tinh thần bất khuất của người phụ nữ Việt Nam. Tượng đài được dựng lên không chỉ để tưởng nhớ công lao của Mẹ Suốt, mà còn nhằm khắc ghi một giai đoạn lịch sử hào hùng, nhắc nhở các thế hệ sau về giá trị của hòa bình, độc lập và sự đánh đổi lớn lao của những con người bình dị trong cuộc đấu tranh bảo vệ Tổ quốc.",
+      "Tượng đài Mẹ Suốt là công trình tưởng niệm gắn liền với hình tượng Nguyễn Thị Suốt – người mẹ anh hùng tiêu biểu cho tinh thần quật cường của nhân dân Quảng Trị trong thời kỳ kháng chiến chống Mỹ. Trong những năm chiến tranh ác liệt, khi tuyến đường và dòng sông trở thành mục tiêu đánh phá, Mẹ Suốt đã không quản hiểm nguy, ngày đêm chèo đò đưa bộ đội, vũ khí và lương thực vượt sông, góp phần giữ vững mạch giao thông chiến lược phục vụ tiền tuyến. Hình ảnh người mẹ lam lũ, kiên cường giữa bom đạn đã trở thành biểu tượng sống động cho lòng yêu nước, sự hy sinh thầm lặng và tinh thần bất khuất của người phụ nữ Việt Nam. Tượng đài được dựng lên không chỉ để tưởng nhớ công lao của Mẹ Suốt, mà còn nhằm khắc ghi một giai đoạn lịch sử hào hùng, nhắc nhở các thế hệ sau về giá trị của hòa bình, độc lập và sự đánh đổi lớn lao của những con người bình dị trong cuộc đấu tranh bảo vệ Tổ quốc.",
 
     historyStory_en:
       "The Monument of Mother Suot is a radiant symbol of revolutionary heroism, honoring Hero of Labor Nguyen Thi Suot (1906 - 1968) – a brave daughter of Quang Binh province. During the fiercest years of the resistance war against the US, while Dong Hoi was devastated by tens of thousands of tons of bombs, Mother Suot, even in her 60s, defied all dangers to single-handedly ferry thousands of soldiers and weapons across the Nhat Le River. At that time, the river was never at peace, surrounded by falling bombs and stray bullets, yet her oars remained steady, carrying faith and vitality to the front lines. She heroically sacrificed her life on October 13, 1968, during a US air raid, leaving behind profound grief and an immortal legend of patriotism. In 1995, the monument was inaugurated on the historic banks of the Nhat Le River. Standing proudly with an oar in hand facing the water, the monument is not only a tribute from future generations but also a reminder of the indomitable spirit and extraordinary courage of Vietnamese women amidst the storms of war.",
@@ -185,7 +185,7 @@ const heritageData = [
       "Hang Sơn Đoòng là hang động tự nhiên lớn nhất thế giới, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, với sông ngầm, rừng nguyên sinh bên trong và hệ sinh thái riêng biệt.",
     description_en:
       "Son Doong Cave is the world's largest natural cave, located in Phong Nha-Ke Bang National Park, featuring an underground river, internal jungle, and unique ecosystem.",
-    address: "Xã Tân Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    address: "Xã Tân Trạch, huyện Bố Trạch, tỉnh Quảng Trị",
     lat: 17.464945897175223,
     lng: 106.2879303382137,
     rating: 5.0,
@@ -209,7 +209,7 @@ const heritageData = [
       "Hố sụt khổng lồ tạo giếng trời",
     ],
     historyStory:
-      "Hang Sơn Đoòng được phát hiện năm 1991 bởi ông Hồ Khanh, một người dân địa phương ở Quảng Bình, nhưng chỉ được khám phá đầy đủ năm 2009 bởi Hiệp hội Hang động Anh. Hang được hình thành cách đây 2-5 triệu năm do nước sông xói mòn đá vôi. Năm 2013, hang được mở cửa cho du lịch thám hiểm hạn chế, trở thành biểu tượng của du lịch mạo hiểm Việt Nam và được công nhận là hang động tự nhiên lớn nhất thế giới.",
+      "Hang Sơn Đoòng được phát hiện năm 1991 bởi ông Hồ Khanh, một người dân địa phương ở Quảng Trị, nhưng chỉ được khám phá đầy đủ năm 2009 bởi Hiệp hội Hang động Anh. Hang được hình thành cách đây 2-5 triệu năm do nước sông xói mòn đá vôi. Năm 2013, hang được mở cửa cho du lịch thám hiểm hạn chế, trở thành biểu tượng của du lịch mạo hiểm Việt Nam và được công nhận là hang động tự nhiên lớn nhất thế giới.",
     historyStory_en:
       "Son Doong Cave was discovered in 1991 by local man Ho Khanh in Quang Binh Province, but fully explored in 2009 by the British Cave Research Association. Formed 2-5 million years ago by river erosion of limestone, it opened for limited adventure tourism in 2013. Recognized as the world's largest natural cave, it features its own jungle, river, and ecosystem, making it a global icon of Vietnam's adventure travel.",
   },
@@ -223,7 +223,7 @@ const heritageData = [
       "Hang Én là một trong những hang động lớn nhất thế giới, nằm sâu trong Vườn quốc gia Phong Nha-Kẻ Bàng, với bãi cát, sông ngầm và hệ thống hang rộng lớn.",
     description_en:
       "En Cave is the third largest cave in the world, located deep in Phong Nha-Ke Bang National Park, featuring a beach, underground river, and vast chambers.",
-    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Trị",
     lat: 17.457392586611025,
     lng: 106.28773716717932,
     rating: 4.9,
@@ -259,7 +259,7 @@ const heritageData = [
       "Động Thiên Đường là hang động khô dài nhất châu Á, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, với hệ thống thạch nhũ đẹp như cung điện.",
     description_en:
       "Paradise Cave is Asia's longest dry cave, located in Phong Nha-Ke Bang National Park, featuring stunning stalactites resembling a palace.",
-    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    address: "Xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Trị",
     lat: 17.51947184574964,
     lng: 106.22357457499751,
     rating: 4.9,
@@ -292,10 +292,10 @@ const heritageData = [
     category: "nature",
     type: "Bãi biển đẹp",
     description:
-      "Bãi biển Nhật Lệ là bãi biển nổi tiếng ở Quảng Bình với cát trắng mịn, nước trong xanh và sóng nhẹ, nằm ngay trung tâm thành phố Đồng Hới.",
+      "Bãi biển Nhật Lệ là bãi biển nổi tiếng ở Quảng Trị với cát trắng mịn, nước trong xanh và sóng nhẹ, nằm ngay trung tâm thành phố Đồng Hới.",
     description_en:
-      "Nhat Le Beach is a famous beach in Quang Binh with soft white sand, clear turquoise water, and gentle waves, located in the heart of Dong Hoi City.",
-    address: "Phường Đồng Phú, TP. Đồng Hới, tỉnh Quảng Bình",
+      "Nhat Le Beach is a famous beach in Quang Tri with soft white sand, clear turquoise water, and gentle waves, located in the heart of Dong Hoi City.",
+    address: "Phường Đồng Phú, TP. Đồng Hới, tỉnh Quảng Trị",
     lat: 17.494138739258215,
     lng: 106.62644433656853,
     rating: 4.5,
@@ -319,9 +319,9 @@ const heritageData = [
       "Gần trung tâm thành phố",
     ],
     historyStory:
-      "Bãi biển Nhật Lệ nằm ở cửa sông Nhật Lệ đổ ra biển Đông, là địa danh nổi tiếng ở Quảng Bình từ thời xưa. Tên gọi từ sông Nhật Lệ, gắn với nhiều sự kiện lịch sử và văn hóa địa phương. Ngày nay là điểm du lịch biển phổ biến, kết hợp với các di tích gần đó.",
+      "Bãi biển Nhật Lệ nằm ở cửa sông Nhật Lệ đổ ra biển Đông, là địa danh nổi tiếng ở Quảng Trị từ thời xưa. Tên gọi từ sông Nhật Lệ, gắn với nhiều sự kiện lịch sử và văn hóa địa phương. Ngày nay là điểm du lịch biển phổ biến, kết hợp với các di tích gần đó.",
     historyStory_en:
-      "Nhat Le Beach is located at the mouth of the Nhat Le River flowing into the East Sea, a famous landmark in Quang Binh since ancient times. Named after the river, it is linked to local history and culture. Today, it is a popular beach tourism spot, combined with nearby heritage sites.",
+      "Nhat Le Beach is located at the mouth of the Nhat Le River flowing into the East Sea, a famous landmark in Quang Tri since ancient times. Named after the river, it is linked to local history and culture. Today, it is a popular beach tourism spot, combined with nearby heritage sites.",
   },
   {
     id: 8,
@@ -333,7 +333,7 @@ const heritageData = [
       "Suối nước Moọc là khu du lịch sinh thái với dòng suối trong xanh, rừng cây bao quanh, nằm trong Vườn quốc gia Phong Nha-Kẻ Bàng, phù hợp cho các hoạt động tắm suối và khám phá.",
     description_en:
       "Mooc Spring is an eco-tourism site with clear blue streams, surrounded by forest, located in Phong Nha-Ke Bang National Park, ideal for swimming and exploration.",
-    address: "Xã Phúc Trạch, huyện Bố Trạch, tỉnh Quảng Bình",
+    address: "Xã Phúc Trạch, huyện Bố Trạch, tỉnh Quảng Trị",
     lat: 17.556874493860484,
     lng: 106.23818999828748,
     rating: 4.5,
@@ -370,7 +370,7 @@ const heritageData = [
       "Cồn cát Quang Phú là khu vực đồi cát trắng mịn gần Đồng Hới, với cảnh quan như sa mạc, phù hợp trượt cát và chụp ảnh.",
     description_en:
       "Quang Phu Sand Dunes are white sand hills near Dong Hoi, resembling a desert landscape, ideal for sandboarding and photography.",
-    address: "Xã Quang Phú, TP. Đồng Hới, tỉnh Quảng Bình",
+    address: "Xã Quang Phú, TP. Đồng Hới, tỉnh Quảng Trị",
     lat: 17.531452319901103,
     lng: 106.59462747712249,
     rating: 4.5,
